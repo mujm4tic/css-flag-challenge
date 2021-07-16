@@ -1,0 +1,49 @@
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+section{
+    height: 500px;
+    width: 300px;
+}
+
+
+.black{
+    background-color: black;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        height: 100px;
+        width: 500px;
+    }
+
+    .black{
+        order: 1
+    }
+
+    .red{
+        order: 2
+    }
+
+    .yellow{
+        order: 3
+    }
+}
